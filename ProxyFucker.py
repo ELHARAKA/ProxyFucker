@@ -17,29 +17,29 @@ print '''
  | |   | | | (_) >  <| |_| | | |  | |_| | (__|   <  __/ |   
  |_|   |_|  \___/_/\_\\__, | |_|   \__,_|\___|_|\_\___|_|   
                        __/ |                                
-                      |___/   By : FAHD \__THISISWHOISTHIS__/                            
+                      |___/   By : \__FAHD__/                            
                                         
 
     '''
 print 'Note: Most of the Proxies are being updated everyday. If none of them worked, come back and try again later.'
 print '------------------------------------------------'
 
-print '[1] Fresh Proxy'
-print '[2] Lucky proxy'
-print '[3] Mixed Proxy'
-print '[4] Random Proxy'+'\n------------------'
+print '[1] Fresh Proxies'
+print '[2] New Proxies'
+print '[3] Random Proxies'
+print '[4] Old Proxies'+'\n------------------'
 pilihan = raw_input('[+] Enter your choice : ')
 
 print '[+] Connecting...'
 try:
     if pilihan=='1':
-        url=urllib.urlopen('http://nntime.com/').read()
-    elif pilihan == '2':
         url=urllib.urlopen('http://nntime.com/proxy-list-01.htm').read()
-    elif pilihan=='3':
+    elif pilihan == '2':
         url=urllib.urlopen('http://nntime.com/proxy-list-02.htm').read()
-    elif pilihan=='4':
+    elif pilihan=='3':
         url=urllib.urlopen('http://nntime.com/proxy-list-03.htm').read()
+    elif pilihan=='4':
+        url=urllib.urlopen('http://nntime.com/proxy-list-04.htm').read()
 except:
     print '[*] Can not establish SSL connection!'
     sys.exit('[*] Please Check your internet and try again!')
@@ -101,5 +101,5 @@ except KeyboardInterrupt:
     sys.exit(1)
 
 print '------------------------------------------------'
-print 'Done, Enjoy it'
+print 'Done'
 print '------------------------------------------------'
